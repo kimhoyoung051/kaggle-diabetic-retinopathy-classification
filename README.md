@@ -210,7 +210,7 @@
 * Prediction: Moderate NPDR <br/>
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/78b05dbd-28bd-4c19-b002-c58f0bb98368 width="600" height="150"> <br/>
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/90e4f8b3-c294-46f4-b323-d85c2cdb1b3b width="600" height="150"> <br/>
-* Prediction: Moderate NPDR <br/>
+* Prediction: Severe NPDR <br/>
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/948f8117-15ab-47ed-84e4-acea4e2221f7 width="600" height="150"> <br/>
 
 ##### 2) Input image / Grad-CAM / Guided-Backpropagation / Guided Grad-CAM
@@ -231,4 +231,70 @@
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/76200e00-7378-4fdc-b216-983a0fcb6c60 width="1200" height="120"> <br/>
 * Prediction: PDR <br/>
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/26e5b67a-23f8-40c0-b964-2581af07104e width="1200" height="120"> <br/>
+<br/> <br/>
+
+
+### EfficientNet B3
+#### (1) Loss and Accuracy
+* **Train and Valdiation Accuracy**
+<p align="left">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/0cac6b19-4e11-412d-a4ef-e38b3a2808b0" width="32%">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/ed015329-4e2e-4e41-8356-230e5c13e4f7" width="32%">
+</p>
+<br/>
+
+* **Train and Valdiation Loss**
+<p align="left">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/3fb01c07-ba16-4c93-b1af-70566037ebda" width="32%">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/486b8084-c756-4783-ab3d-b8a43d3a12b9" width="32%">
+</p>
+<br/>
+
+* **Test Dataset Accuracy = 68.54%**
+<br/>
+
+#### (2) Sensitivity and Specificity
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/c154b3f4-d603-49f3-924c-046afa238338 width="400" height="200"><br/>
+
+#### (3) Confusion Matrix
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/8e31877a-2116-4a7d-965b-6bb4f41e6729 width="300" height="300"><br/>
+
+#### (4) ROC Curve
+##### 1) One vs. Rest multiclass
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/a3b6c1f1-f5ab-4898-8ca0-aff757b5e887 width="300" height="300"><br/>
+##### 2) One vs. One
+<p align="left">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/9e4fa9e8-bad4-4273-b861-6bb6642fc9b8" width="18%">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/4b32ebae-2b94-45e1-9a26-a3869681de4a" width="18%">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/e24de80d-c2a3-4912-96cf-3a5c2cbed452" width="18%">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/073afcd8-06ba-4685-8b22-0b2e84883db4" width="18%">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/f16239fd-1bd8-43c5-8616-c01b22493a3e" width="18%">
+</p> <br/>
+<p align="left">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/f325aa80-dcbc-4591-8752-c32734926050" width="18%">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/bbd5291b-6845-45fa-9278-b810a3193369" width="18%">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/6e70a568-0fe1-4378-84a8-77461b15c8ff" width="18%">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/eba17f12-59bb-4acd-90a4-48a24f52fba6" width="18%">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/6fe22f35-6bd4-49c7-9720-c09e2af2d18d" width="18%">
+</p> <br/>
+
+#### (5) Predictions
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/29296d53-e4bb-4716-8d3c-abf67e492c8f width="300" height="300"><br/>
+
+#### (6) Grad-CAM
+##### 1) Grad-CAM by Layers
+* Prediction: Moderate NPDR <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/6239d4dc-2333-4c4d-8053-960551ebde8a width="600" height="150"> <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/687de737-f523-4656-9756-7a60887adca8 width="600" height="150"> <br/>
+* Prediction: Severe NPDR <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/93278ca3-488b-4f64-9f21-e97e2108b332 width="600" height="150"> <br/>
+
+##### 2) Input image / Grad-CAM / Guided-Backpropagation / Guided Grad-CAM / Grad-CAM++ / Guided Grad-CAM++
+* Prediction: No DR <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/8f862942-7e0b-4fb6-a71f-6f7ce4b92803 width="1200" height="120"> <br/>
+* Prediction: Moderate NPDR <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/b7812a11-4696-4073-865d-38cb1cb889c0 width="1200" height="120"> <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/266bfb56-27cb-44f5-ab3b-00aa7a70dc59 width="1200" height="120"> <br/>
+* Prediction: Severe NPDR <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/7dfd98b2-2df1-420a-9d15-36fda4d2d587 width="1200" height="120"> <br/>
 <br/> <br/>
