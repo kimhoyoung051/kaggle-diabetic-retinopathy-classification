@@ -38,7 +38,7 @@
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/b50c1eed-2fa6-4106-8af8-3e686557c8c7 width="800" height="200"><br/>
   * No diabetic retinopathy(DR) / Mild non-proliferative DR (NPDR) / Moderate NPDR / Severe NPDR / Proliferative DR (PDR)
 * Dataset Distribution
-<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/46c226e2-51bb-4d9f-b7ac-e72800c722ad width="800" height="200"><br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/46c226e2-51bb-4d9f-b7ac-e72800c722ad width="400" height="400"><br/>
   * No DR: 68333 (72.22%)
   * Mild NPDR: 6870 (7.26%)
   * Moderate NPDR: 14667 (15.50%)
@@ -53,7 +53,7 @@
 * **데이터의 문제점**
   * 심한 데이터 불균형 (No DR이 거의 대부분, Severe NPDR과 PDR이 매우 적음)
   * 흐리거나 초점이 불분명한 사진이 많음
-    <p align="center"><img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/0d4c0c89-4b18-47b6-890e-5814fa11290e"><img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/ed95b2a2-50ff-40c0-8ba7-aa5bc947d01d"></p>
+    <p align="center"><img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/0d4c0c89-4b18-47b6-890e-5814fa11290e" width="300" height="300"><img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/ed95b2a2-50ff-40c0-8ba7-aa5bc947d01d" width="300" height="300"></p>
 1. 매우 흐리거나 초점이 불분명한 사진 삭제
 2. Normal data의 20%만 사용 (Downsampling)
   * No DR: 14922
