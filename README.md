@@ -37,13 +37,13 @@
 * 본 데이터에는 5가지 category의 fundus image가 존재<br/> : No diabetic retinopathy(DR) / Mild non-proliferative DR (NPDR) / Moderate NPDR / Severe NPDR / Proliferative DR (PDR) <br/>
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/b50c1eed-2fa6-4106-8af8-3e686557c8c7 width="800" height="200"><br/>
   (image source: Asia A-O, Zhu C-Z, Althubiti SA, Al-Alimi D, Xiao Y-L, Ouyang P-B, Al-Qaness MAA. Detection of Diabetic Retinopathy in Retinal Fundus Images Using CNN Classification Models. Electronics. 2022; 11(17):2740. https://doi.org/10.3390/electronics11172740)
-* Dataset Distribution
+* Dataset Distribution<br/>
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/46c226e2-51bb-4d9f-b7ac-e72800c722ad width="400" height="400"><br/>
-  * No DR: 68333 (72.22%)
-  * Mild NPDR: 6870 (7.26%)
-  * Moderate NPDR: 14667 (15.50%)
-  * Severe NPDR: 2448 (2.59%)
-  * PDR: 2306 (2.44%)
+  * No DR(0): 68333 (72.22%)
+  * Mild NPDR(1): 6870 (7.26%)
+  * Moderate NPDR(2): 14667 (15.50%)
+  * Severe NPDR(3): 2448 (2.59%)
+  * PDR(4): 2306 (2.44%)
   
 <br/><br/>
 
@@ -55,14 +55,14 @@
     <p align="center"><img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/0d4c0c89-4b18-47b6-890e-5814fa11290e" width="300" height="300"><img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/ed95b2a2-50ff-40c0-8ba7-aa5bc947d01d" width="300" height="300"></p>
 1. 매우 흐리거나 초점이 불분명한 사진 삭제
 2. Normal data의 20%만 사용 (Downsampling)
-  * No DR: 14922
-  * Mild NPDR: 6787
-  * Moderate NPDR: 14257
-  * Severe NPDR: 2333
-  * PDR: 2208
+   * No DR: 14922
+   * Mild NPDR: 6787
+   * Moderate NPDR: 14257
+   * Severe NPDR: 2333
+   * PDR: 2208
 3. Train/Validation/Test dat로 나눔
-  * No DR, Mild NPDR, Moderate NPDR은 6:2:2로 나누기
-  * Severe NPDR, PDR의 경우 3:2:2로 나눈 후, Train set은 추가 data augmentation 진행 (데이터 불균형 막기 위한 upsampling)
+   * No DR, Mild NPDR, Moderate NPDR은 6:2:2로 나누기
+   * Severe NPDR, PDR의 경우 3:2:2로 나눈 후, Train set은 추가 data augmentation 진행 (데이터 불균형 막기 위한 upsampling)
 4. 
 
 
