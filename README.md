@@ -174,7 +174,7 @@
 </p>
 <br/>
 
-* **Test Dataset Accuracy = 69.16%%**
+* **Test Dataset Accuracy = 69.16%**
 <br/>
 
 #### (2) Sensitivity and Specificity
@@ -207,17 +207,28 @@
 
 #### (6) Grad-CAM
 ##### 1) Grad-CAM by Layers
-* Prediction: No DR <br/>
-<img src= width="600" height="150"> <br/>
-<img src= width="600" height="150"> <br/>
 * Prediction: Moderate NPDR <br/>
-<img src= width="600" height="150"> <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/78b05dbd-28bd-4c19-b002-c58f0bb98368 width="600" height="150"> <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/90e4f8b3-c294-46f4-b323-d85c2cdb1b3b width="600" height="150"> <br/>
+* Prediction: Moderate NPDR <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/948f8117-15ab-47ed-84e4-acea4e2221f7 width="600" height="150"> <br/>
 
-##### 2) Input image / Grad-CAM / Guided-Backpropagation / Guided Grad-CAM / Grad-CAM++ / Guided Grad-CAM++
-* Prediction: CNV <br/>
-<img src= width="1000" height="200"> <br/>
-* Prediction: Drusen <br/>
-<img src= width="1000" height="200"> <br/>
-* Prediction: DME <br/>
-<img src= width="1000" height="200"> <br/>
+##### 2) Input image / Grad-CAM / Guided-Backpropagation / Guided Grad-CAM
+* Prediction: No DR <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/c0132d9c-7993-4359-bba6-04419545a3bf width="1200" height="240"> <br/>
+* Prediction: Moderate NPDR <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/d48a800b-6f2c-4633-9722-1d6e0e78d84f width="1200" height="240"> <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/c93460fb-af96-4b54-9eaa-e128bf562ee2 width="1200" height="240"> <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/128d58f0-4781-4834-bdbf-484d80a197a7 width="1200" height="240"> <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/dbb57ff0-6f2b-4a8f-aebb-5ba4e5f09b83 width="1200" height="240"> <br/>
+* Prediction: PDR <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/b1563f6c-1a07-4be7-b8f7-1f9cb320547a width="1200" height="240"> <br/>
+
+##### 3) Input image / Grad-CAM / Guided-Backpropagation / Guided Grad-CAM / Grad-CAM++ / Guided Grad-CAM++
+* Prediction: Moderate NPDR <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/a4296f66-66a5-4462-ba21-65d75443a965 width="1200" height="120"> <br/>
+* Prediction: Severe NPDR <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/76200e00-7378-4fdc-b216-983a0fcb6c60 width="1200" height="120"> <br/>
+* Prediction: PDR <br/>
+<img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/26e5b67a-23f8-40c0-b964-2581af07104e width="1200" height="120"> <br/>
 <br/> <br/>
