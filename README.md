@@ -48,7 +48,7 @@
 * **데이터의 문제점**
   * 심한 데이터 불균형 (No DR이 거의 대부분, Severe NPDR과 PDR이 매우 적음)
   * 흐리거나 초점이 불분명한 사진이 많음
-    <p align="left">
+    <p align="center">
      <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/0d4c0c89-4b18-47b6-890e-5814fa11290e" width="20%">
      <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/ed95b2a2-50ff-40c0-8ba7-aa5bc947d01d" width="20%">
      <figcaption align="center"> Eyelid가 보이고 초점이 흐릿한 사진 (왼쪽) / 이미지 정보가 거의 없는 사진 (오른쪽)</figcaption>
@@ -91,7 +91,7 @@
 9. Ben Graham's preprocessing: Gaussian blur를 취한 후 weight를 줘서 원래 이미지와 subtract -> 조명 효과 제거
 <p align="center">
   <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/314b2dfa-1519-4ab2-9e4b-cc5f621cdde0" width="600" height="400">
-  <figcaption align="center"> 시행 전 (왼쪽) / 시행 후 (오른쪽) </figcaption>
+  <figcaption> 시행 전 (왼쪽) / 시행 후 (오른쪽) </figcaption>
 </p><br/>
 <br/> <br/> <br/>
 
