@@ -51,6 +51,7 @@
     <p align="left">
      <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/0d4c0c89-4b18-47b6-890e-5814fa11290e" width="20%">
      <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/ed95b2a2-50ff-40c0-8ba7-aa5bc947d01d" width="20%">
+     <figcaption align="center"> Eyelid가 보이고 초점이 흐릿한 사진 (왼쪽) / 이미지 정보가 거의 없는 사진 (오른쪽)</figcaption>
     </p>
 
 <br/><br/>
@@ -69,19 +70,20 @@
    * No DR, Mild NPDR, Moderate NPDR은 6:2:2로 나누기
    * Severe NPDR, PDR의 경우 3:2:2로 나눈 후, Train set은 추가 data augmentation 진행 (데이터 불균형 막기 위한 upsampling)
 5. Train dataset의 Severe NPDR, PDR의 data augmentation 시행
-   * 시행 방법
-<img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/3d84ce35-2b17-4b9d-891a-8bc75c4ee138" width="300" height="400"><br/>
-   * 시행 횟수: 데이터의 2배 시행
+   * 시행 방법<br/>
+<img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/3d84ce35-2b17-4b9d-891a-8bc75c4ee138" width="300" height="200"><br/>
+   * 시행 횟수: 원래 데이터 수의 2배만큼 시행
 6. Downsampling, upsampling 완료 후 Train/Validation/Test dataset의 distribution
 <p align="center">
  <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/bcadb749-ff10-4067-bc48-7ba1428e6436" width="200" height="200">
  <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/d1d70edc-28df-48de-8bac-736e0609d30f" width="200" height="200">
  <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/a68bdb7f-af58-4d19-b1d0-0ccde9b29df2" width="200" height="200">
+ <figcaption align="center">Train dataset (왼쪽) / Validation dataset (중간) / Test dataset (오른쪽)</figcaption>
 </p>
 7. 최대한 원형의 이미지 데이터 살리기 위해 image의 대각선 길이만큼 회전 후 padding / 이후 원형으로 crop / 다시 원래대로 회전시키기
 <p align="center">
   <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/60e38f34-3672-4297-8099-a8f0ffd25a34" width="600" height="400">
-  <figcaption align="center">시행 전 (왼쪽) 시행 후 (오른쪽)</figcaption>
+  <figcaption align="center">시행 전 (왼쪽) / 시행 후 (오른쪽)</figcaption>
 </p><br/>
 8. Rescale
   * Train dataset인 경우 추가 augmentation을 위해 600x600으로 rescale
@@ -89,7 +91,7 @@
 9. Ben Graham's preprocessing: Gaussian blur를 취한 후 weight를 줘서 원래 이미지와 subtract -> 조명 효과 제거
 <p align="center">
   <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/314b2dfa-1519-4ab2-9e4b-cc5f621cdde0" width="600" height="400">
-  <figcaption align="center">시행 전 (왼쪽) 시행 후 (오른쪽)</figcaption>
+  <figcaption align="center"> 시행 전 (왼쪽) / 시행 후 (오른쪽) </figcaption>
 </p><br/>
 <br/> <br/> <br/>
 
