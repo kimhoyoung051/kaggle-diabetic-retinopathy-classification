@@ -34,9 +34,9 @@
 * Diabetic retinopathy (당뇨병성 망막병증)란
   * 당뇨병의 합병증으로 발생
   * 초기 증상이 없어 이후 실명 등을 유발할 수 있음
-* 본 데이터에는 5가지 category의 fundus image가 존재<br/>
+* 본 데이터에는 5가지 category의 fundus image가 존재<br/> : No diabetic retinopathy(DR) / Mild non-proliferative DR (NPDR) / Moderate NPDR / Severe NPDR / Proliferative DR (PDR) <br/>
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/b50c1eed-2fa6-4106-8af8-3e686557c8c7 width="800" height="200"><br/>
-  * No diabetic retinopathy(DR) / Mild non-proliferative DR (NPDR) / Moderate NPDR / Severe NPDR / Proliferative DR (PDR)
+  (image source: Asia A-O, Zhu C-Z, Althubiti SA, Al-Alimi D, Xiao Y-L, Ouyang P-B, Al-Qaness MAA. Detection of Diabetic Retinopathy in Retinal Fundus Images Using CNN Classification Models. Electronics. 2022; 11(17):2740. https://doi.org/10.3390/electronics11172740)
 * Dataset Distribution
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/46c226e2-51bb-4d9f-b7ac-e72800c722ad width="400" height="400"><br/>
   * No DR: 68333 (72.22%)
@@ -45,7 +45,6 @@
   * Severe NPDR: 2448 (2.59%)
   * PDR: 2306 (2.44%)
   
- 
 <br/><br/>
 
 ### Data Preprocessing
