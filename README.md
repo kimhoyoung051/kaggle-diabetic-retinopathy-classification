@@ -18,7 +18,7 @@
   * EyePACS dataset 2015
   * APTOS 2019
   * INDIAN DIABETIC RETINOPATHY IMAGE DATASET (IDRID)
-  * Messidor 2<br/>
+  * Messidor 2
 * **Data citation**
   * EyePACS dataset 2015
     - Emma Dugas, Jared, Jorge, Will Cukierski. (2015). Diabetic Retinopathy Detection. Kaggle. https://kaggle.com/competitions/diabetic-retinopathy-detection
@@ -33,7 +33,7 @@
     - https://www.kaggle.com/datasets/mariaherrerot/messidor2preprocess/data<br/>
 * **Diabetic retinopathy (당뇨병성 망막병증)란**
   * 당뇨병의 합병증으로 발생
-  * 초기 증상이 없어 이후 실명 등을 유발할 수 있음<br/>
+  * 초기 증상이 없어 이후 실명 등을 유발할 수 있음
 * **본 데이터에는 5가지 category의 fundus image가 존재**<br/> : No diabetic retinopathy(DR) / Mild non-proliferative DR (NPDR) / Moderate NPDR / Severe NPDR / Proliferative DR (PDR) <br/>
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/b50c1eed-2fa6-4106-8af8-3e686557c8c7 width="800" height="300"><br/>
   (image source: Asia A-O, Zhu C-Z, Althubiti SA, Al-Alimi D, Xiao Y-L, Ouyang P-B, Al-Qaness MAA. Detection of Diabetic Retinopathy in Retinal Fundus Images Using CNN Classification Models. Electronics. 2022; 11(17):2740. https://doi.org/10.3390/electronics11172740)
@@ -44,7 +44,6 @@
   * Moderate NPDR(2): 14667 (15.50%)
   * Severe NPDR(3): 2448 (2.59%)
   * PDR(4): 2306 (2.44%)
-<br/>
 * **데이터의 문제점**
   * 심한 데이터 불균형 (No DR이 거의 대부분, Severe NPDR과 PDR이 매우 적음)
   * 흐리거나 초점이 불분명한 사진이 많음
@@ -53,26 +52,25 @@
      <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/ed95b2a2-50ff-40c0-8ba7-aa5bc947d01d" width="20%">
      <figcaption align="left"> Eyelid가 보이고 초점이 흐릿한 사진 (왼쪽) / 이미지 정보가 거의 없는 사진 (오른쪽)</figcaption>
     </p>
-
 <br/><br/>
 
 ### Data Preprocessing
 * **참고**: [https://yhu0409.tistory.com/10](https://yhu0409.tistory.com/10)
-1. 매우 흐리거나 초점이 불분명한 사진 삭제<br/>
-2. Normal data의 20%만 사용 (Downsampling)<br/>
+1. 매우 흐리거나 초점이 불분명한 사진 삭제
+2. Normal data의 20%만 사용 (Downsampling)
 3. 전처리 후 남은 data의 distribution
    * No DR: 14922
    * Mild NPDR: 6787
    * Moderate NPDR: 14257
    * Severe NPDR: 2333
-   * PDR: 2208<br/>
+   * PDR: 2208
 4. Train/Validation/Test data로 나눔
    * No DR, Mild NPDR, Moderate NPDR은 6:2:2로 나누기
-   * Severe NPDR, PDR의 경우 3:2:2로 나눈 후, Train set은 추가 data augmentation 진행 (데이터 불균형 막기 위한 upsampling)<br/>
+   * Severe NPDR, PDR의 경우 3:2:2로 나눈 후, Train set은 추가 data augmentation 진행 (데이터 불균형 막기 위한 upsampling)
 5. Train dataset의 Severe NPDR, PDR의 data augmentation 시행
    * 시행 방법<br/>
 <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/3d84ce35-2b17-4b9d-891a-8bc75c4ee138" width="300" height="180"><br/>
-   * 시행 횟수: 원래 데이터 수의 2배만큼 시행<br/>
+   * 시행 횟수: 원래 데이터 수의 2배만큼 시행
 6. Downsampling, upsampling 완료 후 Train/Validation/Test dataset의 distribution
 <p align="left">
  <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/bcadb749-ff10-4067-bc48-7ba1428e6436" width="200" height="200">
@@ -87,7 +85,7 @@
 </p><br/>
 8. Rescale
   * Train dataset인 경우 추가 augmentation을 위해 600x600으로 rescale
-  * Validation/Test dataset인 경우 512x512로 rescale<br/>
+  * Validation/Test dataset인 경우 512x512로 rescale
 9. Ben Graham's preprocessing: Gaussian blur를 취한 후 weight를 줘서 원래 이미지와 subtract -> 조명 효과 제거
 <p align="left">
   <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/314b2dfa-1519-4ab2-9e4b-cc5f621cdde0" width="600" height="400">
