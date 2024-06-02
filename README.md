@@ -57,8 +57,8 @@
      <figcaption align="left"> Eyelid가 보이고 초점이 흐릿한 사진 (왼쪽) / 이미지 정보가 거의 없는 사진 (오른쪽)</figcaption>
     </p>
   * **해결 방법**
-    1. Preprocessing을 거치기
-    2. 단순히 512로 rescale하기
+    1. 조명 효과 등을 없애고, image 정보를 최대한 유지하면서 size를 균일하게 맞추는 Preprocessing을 거치기
+    2. Image 정보를 최대한 유지하면서 512x512 size로 rescale하기
 <br/><br/>
 
 ### Data Preprocessing
