@@ -129,6 +129,7 @@
 
 ## CNN Classification without Preprocessing
 ### DenseNet121
+* Code: [Click here]()
 #### (1) Loss and Accuracy
 * **Train and Valdiation Accuracy**
 <p align="left">
@@ -196,6 +197,7 @@
 
 ## CNN Classification with Preprocessing
 ### ResNet50
+* Code: [Click here](https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/blob/main/classification_with_preprocess/Kaggle_DRdataset_preprocssed_ResNet50_Transfer%20Learning.ipynb)
 #### (1) Loss and Accuracy
 * **Train and Valdiation Accuracy**
 <p align="left">
@@ -260,6 +262,7 @@
 
 
 ### DenseNet121
+* Code: [Click here](https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/blob/main/classification_with_preprocess/Kaggle_DRdataset_preprocssed_DenseNet121_Transfer%20Learning.ipynb)
 #### (1) Loss and Accuracy
 * **Train and Valdiation Accuracy**
 <p align="left">
@@ -336,6 +339,7 @@
 
 
 ### EfficientNet B3
+* Code: [Click here](https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/blob/main/classification_with_preprocess/Kaggle_DRdataset_preprocssed_EfficientNetB3_Transfer%20Learning.ipynb)
 #### (1) Loss and Accuracy
 * **Train and Valdiation Accuracy**
 <p align="left">
