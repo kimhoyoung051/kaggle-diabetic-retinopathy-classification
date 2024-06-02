@@ -61,8 +61,9 @@
     2. Image 정보를 최대한 유지하면서 512x512 size로 rescale하기
 <br/><br/>
 
-### Data Preprocessing [Code](https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/blob/main/data_preprocessing/dr_data_preprocessing.ipynb)
+### Data Preprocessing
 * **참고**: [https://yhu0409.tistory.com/10](https://yhu0409.tistory.com/10)
+* Code: [Click here](https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/blob/main/data_preprocessing/dr_data_preprocessing.ipynb)
 1. 매우 흐리거나 초점이 불분명한 사진 삭제
 2. Normal data의 20%만 사용 (Downsampling)
 3. 전처리 후 남은 data의 distribution
@@ -100,7 +101,8 @@
 </p><br/>
 <br/>
 
-### Data without Preprocessing (Rescale only) [Code](https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/blob/main/data_preprocessing/dr_data_rescale_only.ipynb)
+### Data without Preprocessing (Rescale only)
+* Code: [Click here](https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/blob/main/data_preprocessing/dr_data_rescale_only.ipynb)
 1. 매우 흐리거나 초점이 불분명한 사진 삭제
 2. Normal data의 20%만 사용 (Downsampling)
 3. 전처리 후 남은 data의 distribution
