@@ -6,7 +6,10 @@
 - **[Data](#Data)**
   * **[Data Description](#Data-Description)**
   * **[Data Preprocessing](#Data-Preprocessing)**
-- **[CNN Classification](#CNN-Classification)**
+  * **[Data without Preprocessing (Rescale only)](#Data-without-Preprocessing-(Rescale-only))**
+- **[CNN Classification without Preprocessing](#CNN-Classification-without-Preprocessing)**
+  * **[DenseNet121](#DenseNet121)**
+- **[CNN Classification with Preprocessing](#CNN-Classification-with-Preprocessing)**
   * **[ResNet50](#ResNet50)**
   * **[DenseNet121](#DenseNet121)**
   * **[EfficientNet B3](#EfficientNet-B3)**
@@ -46,12 +49,16 @@
   * PDR(4): 2306 (2.44%)
 * **데이터의 문제점**
   * 심한 데이터 불균형 (No DR이 거의 대부분, Severe NPDR과 PDR이 매우 적음)
+  * Image size가 불규칙함
   * 흐리거나 초점이 불분명한 사진이 많음
     <p align="left">
      <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/0d4c0c89-4b18-47b6-890e-5814fa11290e" width="20%">
      <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/ed95b2a2-50ff-40c0-8ba7-aa5bc947d01d" width="20%">
      <figcaption align="left"> Eyelid가 보이고 초점이 흐릿한 사진 (왼쪽) / 이미지 정보가 거의 없는 사진 (오른쪽)</figcaption>
     </p>
+  * **해결 방법**
+    1. Preprocessing을 거치기
+    2. 단순히 512로 rescale하기
 <br/><br/>
 
 ### Data Preprocessing
@@ -91,9 +98,101 @@
   <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/314b2dfa-1519-4ab2-9e4b-cc5f621cdde0" width="540" height="360">
   <figcaption> 시행 전 (왼쪽) / 시행 후 (오른쪽) </figcaption>
 </p><br/>
+<br/>
+
+### Data without Preprocessing (Rescale only)
+1. 매우 흐리거나 초점이 불분명한 사진 삭제
+2. Normal data의 20%만 사용 (Downsampling)
+3. 전처리 후 남은 data의 distribution
+   * No DR: 14922
+   * Mild NPDR: 6787
+   * Moderate NPDR: 14257
+   * Severe NPDR: 2333
+   * PDR: 2208
+4. Train/Validation/Test data로 나눔
+   * 6:2:2로 나누기
+5. Downsampling 완료 후 Train/Validation/Test dataset의 distribution
+<p align="left">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/5a3bd04d-ec4d-46b6-8e1d-19b3df8ad805" width="200" height="200">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/e4d482a1-c659-47b9-9dac-636676593301" width="200" height="200">
+ <img src="https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/f4aae967-af38-4973-8cb0-d38ebbf4a999" width="200" height="200">
+ <figcaption align="left">Train dataset (왼쪽) / Validation dataset (중간) / Test dataset (오른쪽)</figcaption>
+</p><br/>
+7. 최대한 원형의 이미지 데이터 살리기 위해 image의 대각선 길이만큼 회전 후 padding / 이후 원형으로 crop / 다시 원래대로 회전시키기 (위와 동일)
+8. Rescale
+  * Train dataset인 경우 추가 augmentation을 위해 600x600으로 rescale
+  * Validation/Test dataset인 경우 512x512로 rescale
+
 <br/> <br/> <br/>
 
-## CNN Classification
+## CNN Classification without Preprocessing
+### DenseNet121
+#### (1) Loss and Accuracy
+* **Train and Valdiation Accuracy**
+<p align="left">
+ <img src="" width="32%">
+ <img src="" width="32%">
+</p>
+<br/>
+
+* **Train and Valdiation Loss**
+<p align="left">
+ <img src="" width="32%">
+ <img src="" width="32%">
+</p>
+<br/>
+
+* **Test Dataset Accuracy = %**
+<br/>
+
+#### (2) Sensitivity and Specificity
+<img src= width="400" height="200"><br/>
+
+#### (3) Confusion Matrix
+<img src= width="300" height="300"><br/>
+
+#### (4) ROC Curve
+##### 1) One vs. Rest multiclass
+<img src= width="300" height="300"><br/>
+##### 2) One vs. One
+<p align="left">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+</p> <br/>
+<p align="left">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+</p> <br/>
+
+#### (5) Predictions
+<img src= width="300" height="300"><br/>
+
+#### (6) Grad-CAM
+##### 1) Grad-CAM by Layers
+* Prediction: Moderate NPDR <br/>
+<img src= width="600" height="150"> <br/>
+<img src= width="600" height="150"> <br/>
+* Prediction: Severe NPDR <br/>
+<img src= width="600" height="150"> <br/>
+
+##### 2) Input image / Grad-CAM / Guided-Backpropagation / Guided Grad-CAM / Grad-CAM++ / Guided Grad-CAM++
+* Prediction: No DR <br/>
+<img src= width="1200" height="120"> <br/>
+* Prediction: Moderate NPDR <br/>
+<img src= width="1200" height="120"> <br/>
+<img src= width="1200" height="120"> <br/>
+* Prediction: Severe NPDR <br/>
+<img src= width="1200" height="120"> <br/>
+<br/> <br/>
+
+
+## CNN Classification with Preprocessing
 ### ResNet50
 #### (1) Loss and Accuracy
 * **Train and Valdiation Accuracy**
