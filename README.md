@@ -5,8 +5,8 @@
 ## Table of Contents
 - **[Data](#Data)**
   * **[Data Description](#Data-Description)**
-  * **[Data Preprocessing](#Data-Preprocessing)**
-  * **[Data without Preprocessing (Rescale only)](#Data-without-Preprocessing-(Rescale-only))**
+  * **[Data Preprocessing 1](#Data-Preprocessing-1)**
+  * **[Data Preprocessing 2](#Data-Preprocessing-2)**
 - **[CNN Classification without Preprocessing](#CNN-Classification-without-Preprocessing)**
   * **[DenseNet121](#DenseNet121)**
 - **[CNN Classification with Preprocessing](#CNN-Classification-with-Preprocessing)**
@@ -61,7 +61,8 @@
     2. Image 정보를 최대한 유지하면서 512x512 size로 rescale하기
 <br/><br/>
 
-### Data Preprocessing
+### Data Preprocessing 1
+* **Down sampling + Data augmentation (Upsampling) + Rescale + Ben Graham's Preprocessing**
 * **참고**: [https://yhu0409.tistory.com/10](https://yhu0409.tistory.com/10)
 * Code: [Click here](https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/blob/main/data_preprocessing/dr_data_preprocessing.ipynb)
 1. 매우 흐리거나 초점이 불분명한 사진 삭제
@@ -101,7 +102,8 @@
 </p><br/>
 <br/>
 
-### Data without Preprocessing (Rescale only)
+### Data Preprocessing 2
+* **Down sampling + Rescale**
 * Code: [Click here](https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/blob/main/data_preprocessing/dr_data_rescale_only.ipynb)
 1. 매우 흐리거나 초점이 불분명한 사진 삭제
 2. Normal data의 20%만 사용 (Downsampling)
