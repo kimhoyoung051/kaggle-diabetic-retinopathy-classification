@@ -11,7 +11,7 @@
   * **[ResNet50](#ResNet50)**
   * **[DenseNet121](#DenseNet121)**
   * **[EfficientNet B3](#EfficientNet-B3)**
-- **[CNN Classification with Preprocess 2 (Rescale only)](#CNN-Classification-with-Preprocess-2-(Rescale-only))**
+- **[CNN Classification with Preprocess 2](#CNN-Classification-with-Preprocess-2)**
   * **[DenseNet121](#DenseNet121)**
 <br/><br/>
 
@@ -336,9 +336,9 @@
 <br/> <br/>
 
 
-## CNN Classification with Preprocess 2 (Rescale only)
+## CNN Classification with Preprocess 2
 ### DenseNet121
-#### (0) Code: [Click here]()
+#### (0) Code: [Click here](https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/blob/main/classification_with_rescale_only/Kaggle_DRdataset_rescaled_DenseNet121_Transfer%20Learning.ipynb)
 #### (1) Loss and Accuracy
 * **Train and Valdiation Accuracy**
 <p align="left">
