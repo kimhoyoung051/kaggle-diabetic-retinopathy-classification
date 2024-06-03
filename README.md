@@ -186,7 +186,7 @@
 ##### 2) Input image / Grad-CAM / Guided-Backpropagation / Guided Grad-CAM
 * Prediction: No DR <br/>
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/b0892e01-0c10-4c54-8159-7e43caef82d0 width="800" height="200"> <br/>
-* Prediction: Drusen <br/>
+* Prediction: PDR <br/>
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/ca1d76dd-c04d-4460-9ef1-f5d8e046c91a width="800" height="200"> <br/>
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/bbce99bf-a9ed-4881-9cdf-9f1d99bb4535 width="800" height="200"> <br/>
 <br/> <br/>
