@@ -123,9 +123,7 @@
  <figcaption align="left">Train dataset (왼쪽) / Validation dataset (중간) / Test dataset (오른쪽)</figcaption>
 </p>
 6. 최대한 원형의 이미지 데이터 살리기 위해 image의 대각선 길이만큼 회전 후 padding / 이후 원형으로 crop / 다시 원래대로 회전시키기 (위와 동일)<br/>
-7. Rescale<br/>
-  * Train dataset인 경우 추가 augmentation을 위해 600x600으로 rescale
-  * Validation/Test dataset인 경우 512x512로 rescale
+7. Rescale: Train dataset인 경우 추가 augmentation을 위해 600x600으로 rescale, Validation/Test dataset인 경우 512x512로 rescale
 <br/> <br/> <br/>
 
 ## CNN Classification without Preprocessing
