@@ -7,12 +7,12 @@
   * **[Data Description](#Data-Description)**
   * **[Data Preprocessing 1](#Data-Preprocessing-1)**
   * **[Data Preprocessing 2](#Data-Preprocessing-2)**
-- **[CNN Classification without Preprocessing](#CNN-Classification-without-Preprocessing)**
-  * **[DenseNet121](#DenseNet121)**
-- **[CNN Classification with Preprocessing](#CNN-Classification-with-Preprocessing)**
+- **[CNN Classification with Preprocess 1](#CNN-Classification-with-Preprocess-1)**
   * **[ResNet50](#ResNet50)**
   * **[DenseNet121](#DenseNet121)**
   * **[EfficientNet B3](#EfficientNet-B3)**
+- **[CNN Classification with Preprocess 2 (Rescale only)](#CNN-Classification-with-Preprocess-2-(Rescale-only))**
+  * **[DenseNet121](#DenseNet121)**
 <br/><br/>
 
 ## Data
@@ -123,78 +123,10 @@
  <figcaption align="left">Train dataset (왼쪽) / Validation dataset (중간) / Test dataset (오른쪽)</figcaption>
 </p>
 6. 최대한 원형의 이미지 데이터 살리기 위해 image의 대각선 길이만큼 회전 후 padding / 이후 원형으로 crop / 다시 원래대로 회전시키기 (위와 동일)<br/>
-7. Rescale: Train dataset인 경우 추가 augmentation을 위해 600x600으로 rescale, Validation/Test dataset인 경우 512x512로 rescale
+7. Rescale: Train dataset인 경우 추가 augmentation을 위해 600x600으로 rescale, Validation/Test dataset인 경우 512x512로 rescale (위와 동일)
 <br/> <br/> <br/>
 
-## CNN Classification without Preprocessing
-### DenseNet121
-#### (0) Code: [Click here]()
-#### (1) Loss and Accuracy
-* **Train and Valdiation Accuracy**
-<p align="left">
- <img src="" width="32%">
- <img src="" width="32%">
-</p>
-<br/>
-
-* **Train and Valdiation Loss**
-<p align="left">
- <img src="" width="32%">
- <img src="" width="32%">
-</p>
-<br/>
-
-* **Test Dataset Accuracy = %**
-<br/>
-
-#### (2) Sensitivity and Specificity
-<img src= width="400" height="200"><br/>
-
-#### (3) Confusion Matrix
-<img src= width="300" height="300"><br/>
-
-#### (4) ROC Curve
-##### 1) One vs. Rest multiclass
-<img src= width="300" height="300"><br/>
-##### 2) One vs. One
-<p align="left">
- <img src="" width="18%">
- <img src="" width="18%">
- <img src="" width="18%">
- <img src="" width="18%">
- <img src="" width="18%">
-</p> <br/>
-<p align="left">
- <img src="" width="18%">
- <img src="" width="18%">
- <img src="" width="18%">
- <img src="" width="18%">
- <img src="" width="18%">
-</p> <br/>
-
-#### (5) Predictions
-<img src= width="300" height="300"><br/>
-
-#### (6) Grad-CAM
-##### 1) Grad-CAM by Layers
-* Prediction: Moderate NPDR <br/>
-<img src= width="600" height="150"> <br/>
-<img src= width="600" height="150"> <br/>
-* Prediction: Severe NPDR <br/>
-<img src= width="600" height="150"> <br/>
-
-##### 2) Input image / Grad-CAM / Guided-Backpropagation / Guided Grad-CAM / Grad-CAM++ / Guided Grad-CAM++
-* Prediction: No DR <br/>
-<img src= width="1200" height="120"> <br/>
-* Prediction: Moderate NPDR <br/>
-<img src= width="1200" height="120"> <br/>
-<img src= width="1200" height="120"> <br/>
-* Prediction: Severe NPDR <br/>
-<img src= width="1200" height="120"> <br/>
-<br/> <br/>
-
-
-## CNN Classification with Preprocessing
+## CNN Classification with Preprocess 1
 ### ResNet50
 #### (0) Code: [Click here](https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/blob/main/classification_with_preprocess/Kaggle_DRdataset_preprocssed_ResNet50_Transfer%20Learning.ipynb)
 #### (1) Loss and Accuracy
@@ -401,4 +333,72 @@
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/266bfb56-27cb-44f5-ab3b-00aa7a70dc59 width="1200" height="120"> <br/>
 * Prediction: Severe NPDR <br/>
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/7dfd98b2-2df1-420a-9d15-36fda4d2d587 width="1200" height="120"> <br/>
+<br/> <br/>
+
+
+## CNN Classification with Preprocess 2 (Rescale only)
+### DenseNet121
+#### (0) Code: [Click here]()
+#### (1) Loss and Accuracy
+* **Train and Valdiation Accuracy**
+<p align="left">
+ <img src="" width="32%">
+ <img src="" width="32%">
+</p>
+<br/>
+
+* **Train and Valdiation Loss**
+<p align="left">
+ <img src="" width="32%">
+ <img src="" width="32%">
+</p>
+<br/>
+
+* **Test Dataset Accuracy = %**
+<br/>
+
+#### (2) Sensitivity and Specificity
+<img src= width="400" height="200"><br/>
+
+#### (3) Confusion Matrix
+<img src= width="300" height="300"><br/>
+
+#### (4) ROC Curve
+##### 1) One vs. Rest multiclass
+<img src= width="300" height="300"><br/>
+##### 2) One vs. One
+<p align="left">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+</p> <br/>
+<p align="left">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+</p> <br/>
+
+#### (5) Predictions
+<img src= width="300" height="300"><br/>
+
+#### (6) Grad-CAM
+##### 1) Grad-CAM by Layers
+* Prediction: Moderate NPDR <br/>
+<img src= width="600" height="150"> <br/>
+<img src= width="600" height="150"> <br/>
+* Prediction: Severe NPDR <br/>
+<img src= width="600" height="150"> <br/>
+
+##### 2) Input image / Grad-CAM / Guided-Backpropagation / Guided Grad-CAM / Grad-CAM++ / Guided Grad-CAM++
+* Prediction: No DR <br/>
+<img src= width="1200" height="120"> <br/>
+* Prediction: Moderate NPDR <br/>
+<img src= width="1200" height="120"> <br/>
+<img src= width="1200" height="120"> <br/>
+* Prediction: Severe NPDR <br/>
+<img src= width="1200" height="120"> <br/>
 <br/> <br/>
