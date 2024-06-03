@@ -126,7 +126,6 @@
 7. Rescale
   * Train dataset인 경우 추가 augmentation을 위해 600x600으로 rescale
   * Validation/Test dataset인 경우 512x512로 rescale
-
 <br/> <br/> <br/>
 
 ## CNN Classification without Preprocessing
