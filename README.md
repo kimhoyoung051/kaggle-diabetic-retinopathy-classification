@@ -410,6 +410,75 @@
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/ce190317-f63f-4d77-af09-6abe42747e8a width="1200" height="120"> <br/>
 <br/> <br/>
 
-
 ### EfficientNet B4
+#### (0) Code: [Click here]()
+#### (1) Loss and Accuracy
+* **Train and Valdiation Accuracy**
+<p align="left">
+ <img src="" width="32%">
+ <img src="" width="32%">
+</p>
+<br/>
+
+* **Train and Valdiation Loss**
+<p align="left">
+ <img src="" width="32%">
+ <img src="" width="32%">
+</p>
+<br/>
+
+* **Test Dataset Accuracy = 69.84%**
+<br/>
+
+#### (2) Sensitivity and Specificity
+<img src= width="400" height="200"><br/>
+
+#### (3) Confusion Matrix
+<img src= width="300" height="300"><br/>
+
+#### (4) ROC Curve
+##### 1) One vs. Rest multiclass
+<img src= width="300" height="300"><br/>
+##### 2) One vs. One
+<p align="left">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+</p> <br/>
+<p align="left">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+ <img src="" width="18%">
+</p> <br/>
+
+#### (5) Predictions
+<img src= width="300" height="300"><br/>
+
+#### (6) Grad-CAM
+##### 1) Grad-CAM by Layers
+* Prediction: Severe NPDR <br/>
+<img src= width="600" height="150"> <br/>
+<img src= width="600" height="150"> <br/>
+<img src= width="600" height="150"> <br/>
+<img src= width="600" height="150"> <br/>
+* Prediction: PDR <br/>
+<img src= width="600" height="150"> <br/>
+
+
+##### 2) Input image / Grad-CAM / Guided-Backpropagation / Guided Grad-CAM / Grad-CAM++ / Guided Grad-CAM++
+* Prediction: No DR <br/>
+<img src= width="1200" height="120"> <br/>
+* Prediction: Moderate NPDR <br/>
+<img src= width="1200" height="120"> <br/>
+<img src= width="1200" height="120"> <br/>
+* Prediction: Severe NPDR <br/>
+<img src= width="1200" height="120"> <br/>
+* Prediction: PDR <br/>
+<img src= width="1200" height="120"> <br/>
+<img src= width="1200" height="120"> <br/>
+<br/> <br/>
 
