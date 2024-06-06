@@ -13,6 +13,7 @@
   * **[EfficientNet B3](#EfficientNet-B3)**
 - **[CNN Classification with Preprocess 2](#CNN-Classification-with-Preprocess-2)**
   * **[DenseNet121-2](#DenseNet121-2)**
+  * **[EfficientNet B4](#EfficientNet-B4)**
 <br/><br/>
 
 ## Data
@@ -408,3 +409,7 @@
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/b6542518-434b-4e20-acfb-6a49f020f53b width="1200" height="120"> <br/>
 <img src=https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/assets/164658426/ce190317-f63f-4d77-af09-6abe42747e8a width="1200" height="120"> <br/>
 <br/> <br/>
+
+
+### EfficientNet B4
+
