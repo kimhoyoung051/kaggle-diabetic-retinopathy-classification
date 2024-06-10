@@ -411,7 +411,7 @@
 <br/> <br/>
 
 ### EfficientNet B4
-#### (0) Code: [Click here]()
+#### (0) Code: [Click here](https://github.com/kimhoyoung051/kaggle-diabetic-retinopathy-classification/blob/main/classification_with_rescale_only/Kaggle_DRdataset_rescaled_EfficientNetB4_Transfer%20Learning.ipynb)
 #### (1) Loss and Accuracy
 * **Train and Valdiation Accuracy**
 <p align="left">
